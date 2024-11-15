@@ -67,7 +67,7 @@ Create a script that builds the Docker image for the **TodoApp** starts the cont
 
 >Note: Ensure you navigate to the todoapp directory using cd todoapp before executing the program, as this sets the correct working directory for running scripts or commands.
 
-![cdTodoapp](../ShellScripts_Basics/Images/cd%20todoapp.png)
+![cdTodoapp](Images/cd%20todoapp.png)
 
 
 #### 1.1 `run_todoapp.sh` - Script to Build and Run the TodoApp
@@ -117,11 +117,11 @@ chmod +x run_todoapp.sh
 
 ---
 
-![chmodRun](../ShellScripts_Basics/Images/chmod%20run.png)
+![chmodRun](Images/chmod%20run.png)
 
-![runSH](../ShellScripts_Basics/Images/run%20sh.png)
+![runSH](Images/run%20sh.png)
 
-![runSH1](../ShellScripts_Basics/Images/run%20sh1.png)
+![runSH1](Images/run%20sh1.png)
 
 The command `chmod +x run_todoapp.sh` is used to make the file `run_todoapp.sh` executable. Here's a breakdown of its components:
 
@@ -190,7 +190,7 @@ chmod +x stop_todoapp.sh
 
 ---
 
-![stopSH](../ShellScripts_Basics/Images/stop%20sh.png)
+![stopSH](Images/stop%20sh.png)
 
 ### **Step-4: Automate Cleaning Up Unused Docker Resources**
 
@@ -243,7 +243,7 @@ chmod +x cleanup_docker.sh
 
 ---
 
-![cleanSH](../ShellScripts_Basics/Images/clean%20sh.png)
+![cleanSH](Images/clean%20sh.png)
 
 ## **References**
 

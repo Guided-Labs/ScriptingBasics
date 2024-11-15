@@ -50,7 +50,7 @@ Completion of all previous lab guides (up to Lab Guide-06) is required before pr
    docker network create todoapp_network
    ```
 
-   ![createnet](../ShellScripts_Basics/Images/Create%20network.png)
+   ![createnet](Images/Create%20network.png)
 
 2. **Run the MySQL Container**:
    Use the following command to create a MySQL container connected to the custom network:
@@ -59,7 +59,7 @@ Completion of all previous lab guides (up to Lab Guide-06) is required before pr
    docker run -d -p3306:3306 --network=todoapp_network -e MYSQL_ROOT_PASSWORD=P@ssw0rd -e MYSQL_DATABASE=tododb --name=mysqldb mysql
    ```
 
-   ![mysql](../ShellScripts_Basics/Images/mysql%20network.png)
+   ![mysql](Images/mysql%20network.png)
 
 ### **Step-2: Define Deployment Requirements**
 
@@ -135,7 +135,7 @@ Execute the script to automate the deployment of the **TodoApp** Docker containe
 ```bash
 ./deploy_todoapp.sh
 ```
-![deploysh](../ShellScripts_Basics/Images/Deploy%20todoapp%20sh.png)
+![deploysh](Images/Deploy%20todoapp%20sh.png)
 
 The script will:
 - Stop and remove any previously running container with the same name.

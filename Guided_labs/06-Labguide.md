@@ -49,7 +49,7 @@ Completion of all previous lab guides (up to Lab Guide-05) is required before pr
    docker network create todoapp_network
    ```
 
-   ![CreateNetwork](../ShellScripts_Basics/Images/Create%20network.png)
+   ![CreateNetwork](Images/Create%20network.png)
 
 2. **Run the MySQL Container**:
    Use the following command to create a MySQL container connected to the custom network:
@@ -58,7 +58,7 @@ Completion of all previous lab guides (up to Lab Guide-05) is required before pr
    docker run -d -p3306:3306 --network=todoapp_network -e MYSQL_ROOT_PASSWORD=P@ssw0rd -e MYSQL_DATABASE=tododb --name=mysqldb mysql
    ```
 
-   ![mysqlnet](../ShellScripts_Basics/Images/mysql%20network.png)
+   ![mysqlnet](Images/mysql%20network.png)
 
 ### **Step-2: Original Bash Script (Container Management)**
 
@@ -129,7 +129,7 @@ print(f"TodoApp is running on http://localhost:{port.split(':')[0]}")
 python run_todoapp.py
 ```
 
-![pythonscript](../ShellScripts_Basics/Images/python%20script.png)
+![pythonscript](Images/python%20script.png)
 
 ### **Step-4: Adding Enhanced Functionality in Python**
 
@@ -216,7 +216,7 @@ logging.info("TodoApp is running successfully")
 ```bash
 python run_todoapp.py
 ```
-![pythonscript2](../ShellScripts_Basics/Images/python%20script%202.png)
+![pythonscript2](Images/python%20script%202.png)
 3. Check `todoapp.log` for logs of the container management tasks.
 
 ## **References**

@@ -46,7 +46,7 @@ First, install the required Python package **PyYAML** to manage YAML files:
 ```bash
 pip install pyyaml
 ```
-![pyyaml](../ShellScripts_Basics/Images/pyyaml.png)
+![pyyaml](Images/pyyaml.png)
 
 Next, create a Python script called `generate_compose.py` to dynamically generate a Docker Compose YAML file for your **TodoApp**.
 
@@ -174,7 +174,7 @@ Once you’ve written the script, execute it to generate the **docker-compose.ym
 python generate_compose.py
 ```
 
-![GenerateCompose](../ShellScripts_Basics/Images/GenerateCompose.png)
+![GenerateCompose](Images/GenerateCompose.png)
 
 This will generate a **docker-compose.yml** file in the current directory with the structure defined in the script. You can now use this file to manage your multi-container **TodoApp** with Docker Compose.
 
@@ -218,7 +218,7 @@ You can now run the following command to launch the application:
 ```bash
 docker-compose up
 ```
-![GenandCompose](../ShellScripts_Basics/Images/Gen%20and%20Compose.png)
+![GenandCompose](Images/Gen%20and%20Compose.png)
 ---
 
 ## **References**

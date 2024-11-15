@@ -155,9 +155,9 @@ This command:
 * **Establishes** a network (todoapp_network) allowing them to communicate.
 
 3. Check the logs to ensure everything is running properly. Once both containers start, you should see output from both services.
-    ![DockerCompose2](../ShellScripts_Basics/Images/DockerCompose2.png)
+    ![DockerCompose2](Images/DockerCompose2.png)
 
-    ![DockerCompose](../ShellScripts_Basics/Images/DockerCompose.png)
+    ![DockerCompose](Images/DockerCompose.png)
 
 4. Once the deployment is successful:
     * **Access** the Java TodoApp on your browser at **http://localhost:8081/swagger-ui/index.html**
@@ -172,7 +172,7 @@ This command:
     docker-compose ps
     ```
 
-    ![docker-composeps](../ShellScripts_Basics/Images/docker-compose%20ps.png)
+    ![docker-composeps](Images/docker-compose%20ps.png)
 
     This will display the list of running containers along with their status and ports.
 
@@ -184,7 +184,7 @@ This command:
     docker-compose down
     ```
 
-    ![dockerDown](../ShellScripts_Basics/Images/docker-compose%20down.png)
+    ![dockerDown](Images/docker-compose%20down.png)
 
 3. **Run the containers in detached mode**:
 
@@ -193,14 +193,14 @@ This command:
     ```bash
     docker-compose up -d
     ```
-    ![dockerUpDetatched](../ShellScripts_Basics/Images/docker-compose%20up%20-d.png)
+    ![dockerUpDetatched](Images/docker-compose%20up%20-d.png)
 
     To stop the detached containers:
 
     ```bash
     docker-compose down
     ```
-    ![dockerDown2](../ShellScripts_Basics/Images/docker-compose%20down%20(2).png)
+    ![dockerDown2](Images/docker-compose%20down%20(2).png)
 
 4. **View container logs** (for troubleshooting):
 
@@ -208,7 +208,7 @@ This command:
     docker-compose logs
     ```
 
-    ![dockerlogs](../ShellScripts_Basics/Images/docker-compose%20logs.png)
+    ![dockerlogs](Images/docker-compose%20logs.png)
 
 ## **References**
 ---

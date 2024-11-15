@@ -62,7 +62,7 @@ In this example:
 - **`todoapp:latest`** is the tag you are assigning to the image. The `latest` tag indicates that this is the most current version.
 - The `.` specifies that Docker should look for the Dockerfile in the current directory.
 
-![Dockerbuild2](../ShellScripts_Basics/Images/Docker%20build%202.png)
+![Dockerbuild2](Images/Docker%20build%202.png)
 
 3. Verify that the image was built successfully:
 
@@ -72,7 +72,7 @@ docker images
 
 This command will list all available Docker images. You should see `todoapp` in the list.
 
-![VerifyImages](../ShellScripts_Basics/Images/VerifyImages.png)
+![VerifyImages](Images/VerifyImages.png)
 
 ### **Step-2: Tag the Docker Image**
 
@@ -88,9 +88,9 @@ In this example:
 
 Now, when you list images using `docker images`, you should see the newly tagged image.
 
-![DockerTag](../ShellScripts_Basics/Images/DockerTag.png)
+![DockerTag](Images/DockerTag.png)
 
-![verifyImages2](../ShellScripts_Basics/Images/VerifyImages2.png)
+![verifyImages2](Images/VerifyImages2.png)
 
 ### **Step-3: Push the Docker Image to a Registry**
 
@@ -102,21 +102,21 @@ To make the image accessible to others, push it to a Docker registry. For this e
 docker login
 ```
 
-![DockerLogin](../ShellScripts_Basics/Images/Docker%20Login.png)
+![DockerLogin](Images/Docker%20Login.png)
 
 - Copy the device confirmation code and submit the device code here: [https://login.docker.com/activate](https://login.docker.com/activate)
 
-![DeviceActivation](../ShellScripts_Basics/Images/Device%20activation.png)
+![DeviceActivation](Images/Device%20activation.png)
 
 - You’ll be prompted to enter your Docker Hub username and password.
 
-![DockerhinLogin](../ShellScripts_Basics/Images/DockerhubLogin.png)
+![DockerhinLogin](Images/DockerhubLogin.png)
 
 - Once the device is connected, you should should an output like this:
 
-![Activation](../ShellScripts_Basics/Images/Activation.png)
+![Activation](Images/Activation.png)
 
-![Activation2](../ShellScripts_Basics/Images/Activation2.png)
+![Activation2](Images/Activation2.png)
 
 2. **Push the tagged image** to Docker Hub:
 
@@ -126,13 +126,13 @@ docker push <your-dockerhub-username>/todoapp:v1.0
 
 Docker will upload the image to your Docker Hub repository.
 
-![DockerPush](../ShellScripts_Basics/Images/DockerPush.png)
+![DockerPush](Images/DockerPush.png)
 
 3. **Verify the image**:
 
 Once the push is complete, visit [Docker Hub](https://hub.docker.com/) and verify that your image is available in your repository.
 
-![VerifyRepo](../ShellScripts_Basics/Images/VerifyRepo.png)
+![VerifyRepo](Images/VerifyRepo.png)
 
 ## **References**
 

@@ -230,7 +230,7 @@ or non-interactively:
 kubectl apply -y deployment.yaml
 ```
 
-![kubeapply](../ShellScripts_Basics/Images/Kub%20apply.png)
+![kubeapply](Images/Kub%20apply.png)
 
 ### **Step-3: Verify Deployment**
 
@@ -239,13 +239,13 @@ To verify your application to a Kubernetes cluster using the `deployment.yaml` f
 ```bash
 kubectl get pods
 ```
-![kubeget](../ShellScripts_Basics/Images/kube%20get.png)
+![kubeget](Images/kube%20get.png)
 
 ```bash
 kubectl get svc
 ``` 
 
-![kubesvc](../ShellScripts_Basics/Images/kube%20svc.png)
+![kubesvc](Images/kube%20svc.png)
 
 
 
