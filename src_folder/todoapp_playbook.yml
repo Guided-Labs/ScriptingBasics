@@ -1,0 +1,39 @@
+---
+- name: Deploy TodoApp
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Install Docker
+      apt:
+        name: docker.io
+        state: present
+        update_cache: yes
+
+    - name: Start Docker service
+      service:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: Pull TodoApp Docker image
+      docker_image:
+        name: my_todoapp
+        source: pull
+
+    - name: Run TodoApp container
+      docker_container:
+        name: todoapp
+        image: my_todoapp
+        state: started
+        ports:
+          - "8081:8081"
+
+    - name: Ensure container is running
+      docker_container_info:
+        name: todoapp
+      register: todoapp_status
+
+    - name: Debug container status
+      debug:
+        var: todoapp_status

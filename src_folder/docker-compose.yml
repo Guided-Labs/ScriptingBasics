@@ -1,0 +1,39 @@
+    
+    services:
+      # MySQL Database Service
+      db:
+        image: mysql
+        container_name: mysql_db
+        environment:
+          MYSQL_ROOT_PASSWORD: P@ssw0rd
+          MYSQL_DATABASE: tododb
+          MYSQL_PASSWORD: P@ssw0rd
+        ports:
+          - "3306:3306"
+        networks:
+          - todoapp_network
+        volumes:
+          - db_data:/var/lib/mysql
+
+      # Java TodoApp Service
+      todoapp:
+        build:
+          context: ./todoapp
+        container_name: todoapp_container
+        ports:
+          - "8081:8081"
+        depends_on:
+          - db
+        environment:
+          SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/tododb
+          SPRING_DATASOURCE_USERNAME: root
+          SPRING_DATASOURCE_PASSWORD: P@ssw0rd
+        networks:
+          - todoapp_network
+        entrypoint: sh -c "sleep 30 && java -jar /app.jar"
+    networks:
+      todoapp_network:
+        driver: bridge
+
+    volumes:
+      db_data:
